@@ -1,0 +1,25 @@
+<div class="container container2">
+    <div class="row article-row">
+        <div class="col-md-2 column1">
+            <div class="row row-text-align">
+                <h1 class="row-text-align">{{ article.votes }}</h1>
+            </div>
+            <div class="row">
+                <h5 class="row-text-align">POINTS</h5>
+            </div>
+        </div>
+        <div class="col-md-10 column2">
+            <a class="large-header" href="{{ article.link }}">{{ article.title }}</a>
+            <br>
+            <small>{{ article.domain() }}</small>
+            <ul class="ul-horizontal-list">
+                <a href (click)="voteUp()">
+                    <li class="horizontal-list"> <span class="arrow-icon">&#8593;</span> Upvote</li>
+                </a>
+                <a href (click)="voteDown()">
+                    <li class="horizontal-list"> <span class="arrow-icon">&#8595;</span> Downvote</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
